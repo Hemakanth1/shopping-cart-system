@@ -69,3 +69,6 @@ As a seller, I want to view all the items that I have added to the portal\
 
 ## ER Diagram
 ![Image](ER_diagram.drawio.svg "ER")
+
+## Wireframes
+![Image](landingPage.jpg "landing-page")
