@@ -1,2 +1,2 @@
 # shopping-cart-system
-![Image](ER-Diagram.png "ER")
+![Image](ER_diagram.svg "ER")
