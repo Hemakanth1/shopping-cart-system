@@ -86,3 +86,38 @@ As a seller, I want to view all the items that I have added to the portal\
 
 ### Cart Page
 ![Image](cartPage.jpg "cart-page")
+
+
+## Tables for the system
+
+1. User table
+    * user_id
+    * username
+    * address
+    * email
+    * password
+    * user_type
+    
+2. Item table
+    * name
+    * description
+    * color
+    * price
+    * make
+    * model
+    * image_url
+    * no_items_available
+    * seller_id (FK)
+    * category_id (FK)
+
+3. Order table
+    * order_id
+    * buyer_id (FK)
+    * item_id (FK)
+    * quantity
+    * total_price
+
+4. Category table
+    * category_id
+    * name
+    * description
