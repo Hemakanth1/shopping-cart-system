@@ -99,6 +99,7 @@ As a seller, I want to view all the items that I have added to the portal\
     * user_type
     
 2. Item table
+    * item_id
     * name
     * description
     * color
@@ -107,17 +108,32 @@ As a seller, I want to view all the items that I have added to the portal\
     * model
     * image_url
     * no_items_available
-    * seller_id (FK)
+    * user_id (FK)
     * category_id (FK)
 
 3. Order table
     * order_id
-    * buyer_id (FK)
+    * user_id (FK)
+    * date&time
+    * status
+    * total_amount
+
+4.  Order Items table   
+    * order_items_id
+    * order_id (FK)
     * item_id (FK)
     * quantity
     * total_price
 
-4. Category table
+5. Category table
     * category_id
     * name
     * description
+
+6. Payment table
+    * payment_id
+    * order_id (FK)
+    * amount
+    * data&time
+    * provider
+    * status
