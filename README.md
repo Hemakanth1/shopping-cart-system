@@ -137,3 +137,28 @@ As a seller, I want to view all the items that I have added to the portal\
     * data&time
     * provider
     * status
+
+
+## End points for seller
+
+1. Create seller account
+    * POST api/sellers - create new seller
+2. Get seller information
+    * GET api/sellers/:id - get seller information by id
+    * GET api/sellers/:id/items - get seller's item by id
+3. Update seller information
+    * PATCH /api/sellers/:id - update seller information.
+4. Delete seller information
+    * DELETE /api/sellers/:id - update seller information.
+5. Add Item 
+    * POST /api/sellers/:id/items - add a new item to the seller's items.
+6. Get item information
+    * GET /api/items/:id - get item information by ID.
+    * GET /api/items/category - get items by category
+    * GET /api/items/model - get items by model
+    * GET /api/items/color - get items by color
+7. Update item information
+    * PATCH /api/items/:id - update item information.
+8. Delete item
+    * DELETE /api/items/:id - delete an item from the seller's item.
+    
