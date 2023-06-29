@@ -68,24 +68,24 @@ As a seller, I want to view all the items that I have added to the portal\
 
 
 ## ER Diagram
-![Image](ER_diagram.drawio.svg "ER")
+![Image](images/ER_diagram.drawio.svg "ER")
 
 ## Wireframes
 
 ### Landing Page
-![Image](landingPage.jpg "landing-page")
+![Image](images/landingPage.jpg "landing-page")
 
 ### Registration Page
-![Image](registrationPage.jpg "registration-page")
+![Image](images/registrationPage.jpg "registration-page")
 
 ### Login Page
-![Image](loginPage.jpg "login-page")
+![Image](images/loginPage.jpg "login-page")
 
 ### Product Description Page
-![Image](productDescriptionPage.jpg "product-description-page")
+![Image](images/productDescriptionPage.jpg "product-description-page")
 
 ### Cart Page
-![Image](cartPage.jpg "cart-page")
+![Image](images/cartPage.jpg "cart-page")
 
 
 ## Tables for the system
