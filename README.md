@@ -139,7 +139,7 @@ As a seller, I want to view all the items that I have added to the portal\
     * status
 
 
-## End points for seller
+<!-- ## End points for seller
 
 1. Create seller account
     * POST api/sellers - create new seller
@@ -160,5 +160,40 @@ As a seller, I want to view all the items that I have added to the portal\
 7. Update item information
     * PATCH /api/items/:id - update item information.
 8. Delete item
-    * DELETE /api/items/:id - delete an item from the seller's item.
+    * DELETE /api/items/:id - delete an item from the seller's item. -->
     
+
+## End points in User Service
+
+* POST /api/users - create new user
+* GET /api/users/:id - get user information by id
+* GET /api/users/:id/items - get user's item by id
+* PATCH /api/users/:id - update user information.
+* DELETE /api/users/:id - delete user information.
+* POST /api/users/register - register a new user
+* POST /api/users/login - user login
+* POST /api/users/:id/items - add a new item to the user's items.
+
+
+## End points in Item Service
+
+* GET /api/items/:id - get item information by ID.
+* GET /api/items/category - get items by category
+* GET /api/items/model - get items by model
+* GET /api/items/color - get items by color
+* GET /api/items/:id/count - get number of available item by id
+* PATCH /api/items/:id - update item information.
+* DELETE /api/items/:id - delete an item from the user's item.
+
+
+## Order Service
+* POST /api/orders - create new order
+* GET /api/orders - get all orders
+* GET /api/orders/:id - get order by id
+* PUT /api/orders/:id - update order
+* DELETE /api/orders/:id - Delete order
+
+## Payment Service
+* POST /api/payments - process a payment
+* GET /api/payments/:id - get payment details by id
+
