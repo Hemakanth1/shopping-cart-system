@@ -186,14 +186,14 @@ As a seller, I want to view all the items that I have added to the portal\
 * DELETE /api/items/:id - delete an item from the user's item.
 
 
-## Order Service
+## End points in Order Service
 * POST /api/orders - create new order
 * GET /api/orders - get all orders
 * GET /api/orders/:id - get order by id
 * PUT /api/orders/:id - update order
 * DELETE /api/orders/:id - Delete order
 
-## Payment Service
+## End points in Payment Service
 * POST /api/payments - process a payment
 * GET /api/payments/:id - get payment details by id
 
