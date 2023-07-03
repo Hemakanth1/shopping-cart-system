@@ -1,5 +1,11 @@
 # shopping-cart-system
 
+[UserStories](#user-stories)
+[ER-Diagram](#er-diagram)
+[WireFrames](#wireframes)
+[Tables](#tables-for-the-system)
+[Endpoint](#end-points)
+
 ## User Stories
 
 ### User story for User
@@ -162,8 +168,9 @@ As a seller, I want to view all the items that I have added to the portal\
 8. Delete item
     * DELETE /api/items/:id - delete an item from the seller's item. -->
     
+## End points
 
-## End points in User Service
+### End points in User Service
 
 * POST /api/users - create new user
 * GET /api/users/:id - get user information by id
@@ -175,7 +182,7 @@ As a seller, I want to view all the items that I have added to the portal\
 * POST /api/users/:id/items - add a new item to the user's items.
 
 
-## End points in Item Service
+### End points in Item Service
 
 * GET /api/items/:id - get item information by ID.
 * GET /api/items/category - get items by category
@@ -186,14 +193,14 @@ As a seller, I want to view all the items that I have added to the portal\
 * DELETE /api/items/:id - delete an item from the user's item.
 
 
-## End points in Order Service
+### End points in Order Service
 * POST /api/orders - create new order
 * GET /api/orders - get all orders
 * GET /api/orders/:id - get order by id
 * PUT /api/orders/:id - update order
 * DELETE /api/orders/:id - Delete order
 
-## End points in Payment Service
+### End points in Payment Service
 * POST /api/payments - process a payment
 * GET /api/payments/:id - get payment details by id
 
