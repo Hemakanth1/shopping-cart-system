@@ -1,10 +1,10 @@
 # shopping-cart-system
 
-[UserStories](#user-stories)
-[ER-Diagram](#er-diagram)
-[WireFrames](#wireframes)
-[Tables](#tables-for-the-system)
-[Endpoint](#end-points)
+* [User Stories](#user-stories)
+* [ER Diagram](#er-diagram)
+* [Wireframes](#wireframes)
+* [Tables for the system](#tables-for-the-system)
+* [Endpoints](#end-points)
 
 ## User Stories
 
