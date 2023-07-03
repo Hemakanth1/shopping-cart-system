@@ -1,5 +1,7 @@
 # shopping-cart-system
 
+## Contents
+
 * [User Stories](#user-stories)
 * [ER Diagram](#er-diagram)
 * [Wireframes](#wireframes)
