@@ -9,5 +9,5 @@ RUN npm install
 
 
 COPY . /app/productService
-EXPOSE 7001
+EXPOSE 80
 CMD ["npm", "run", "migrate-and-start"]

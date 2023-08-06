@@ -9,5 +9,5 @@ RUN npm install
 
 
 COPY . /app/userService
-EXPOSE 7000
+EXPOSE 80
 CMD ["npm", "run", "migrate-and-start"]
