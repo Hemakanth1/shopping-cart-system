@@ -1,0 +1,9 @@
+git branching strategies
+git flow
+trunk based development
+git actions
+
+nipuna.silva@amusedgroup.com
+hello@aventude.com
+
+HEMAKANTH MAHENDRAN - NODE JS - REACT JS - SOFTWARE ENGINEER

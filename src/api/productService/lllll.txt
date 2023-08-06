@@ -1,0 +1,46 @@
+version: '3.9'
+services:
+  product-db:
+    container_name: 'product-db'
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      DB_HOST: 'product-db'
+      DB_USERNAME: '${DB_USERNAME}'
+      DB_PASSWORD: '${DB_PASSWORD}'
+      DB_NAME: '${DB_NAME}'
+      DB_PORT: 3306
+      NODE_ENV: '${NODE_ENV}'
+      API_BASE_ENDPOINT: '${API_BASE_ENDPOINT}'
+    entrypoint: sh -c "
+      echo 'CREATE DATABASE IF NOT EXISTS $DB_NAME; GRANT ALL PRIVILEGES ON $DB_NAME.* TO '\''$DB_USERNAME'\''@'\''%'\''; ' > /docker-entrypoint-initdb.d/init.sql;
+      echo 'CREATE DATABASE IF NOT EXISTS $TEST_DB_NAME; GRANT ALL PRIVILEGES ON $TEST_DB_NAME.* TO '\''$DB_USERNAME'\''@'\''%'\''; ' >> /docker-entrypoint-initdb.d/init.sql;
+      /usr/local/bin/docker-entrypoint.sh --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-authentication-plugin=mysql_native_password"
+    ports:
+      - '4307:3306'
+    volumes:
+      - ./data/db:/data/db
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  product-service:
+    container_name: product-service
+    image: product-service
+    environment:
+      MYSQL_ROOT_PASSWORD: abcd
+      MYSQL_PASSWORD: abcd
+      DB_HOST: 'product-db'
+      DB_USERNAME: '${DB_USERNAME}'
+      DB_PASSWORD: '${DB_PASSWORD}'
+      DB_NAME: '${DB_NAME}'
+      DB_PORT: 3306
+      NODE_ENV: '${NODE_ENV}'
+      API_BASE_ENDPOINT: '${API_BASE_ENDPOINT}'
+    restart: always
+    build: .
+    ports:
+      - '7001:7001'
+    volumes:
+      - ./:/app
+    depends_on:
+      - product-db
